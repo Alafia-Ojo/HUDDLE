@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  background: rgb(255, 255, 255);
 }
 /* HEADER */
 .header {
@@ -40,7 +41,7 @@ body {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 50px;
   font-size: 18px;
 }
@@ -54,8 +55,8 @@ body {
   background: hsl(322, 100%, 66%);
   border-radius: 30px;
   color: rgb(255, 255, 255);
-width: 50%;
-  padding:8px 5px;
+  width:40%;
+  padding:18px 5px;
   font-size: 15px;
   font-weight: bold;
 }
@@ -65,15 +66,21 @@ width: 50%;
 
 /* SECTION */
 
+
 section {
-    box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.041);
+    box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.171);
     padding: 60px;
     border-radius: 10px;
+    
   
 }
 
+section p{
+    color:  hsl(208, 11%, 55%) ;
+}
+
 .section-one {
-    margin:10px 0 0 110px;
+    margin:200px 0 0 110px;
 }
 
 .section-one,
@@ -112,9 +119,9 @@ section {
 
 
 .section-three {
-    padding-bottom: 200px;
+  margin-bottom: 100px;
     
-    margin-bottom: -110px;
+    
 }
 .overlay {
    
@@ -131,6 +138,7 @@ section {
     border-radius: 10px;
     align-items: center;
       justify-content: center;
+      
   
 }
   .flex {
@@ -144,7 +152,7 @@ section {
 .s {
     display: flex;
    align-items: center;
-
+width: 100%;
    justify-content: space-evenly;
     background-color: hsl(192, 100%, 9%);
     margin-top: -110px;
@@ -158,7 +166,7 @@ section {
     border-radius: 30px;
     color: rgb(255, 255, 255);
 width: 25%;
-    padding:13px 0;
+    padding:18px 0;
     font-size: 15px;
     font-weight: bold;
 }
@@ -181,7 +189,7 @@ li {
 
 
 
-@media (max-width: 40em) {
+@media (max-width: 60em) {
   .header-content {
     flex-direction: column;
     text-align: center;
@@ -219,6 +227,10 @@ li {
 
   .s p {
       text-align: center;
+  }
+  .header-nav-button,
+  .overlay-button {
+      width: 80%;
   }
 }
 

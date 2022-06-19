@@ -160,6 +160,22 @@ width: 100%;
  
 }
 
+.ol {
+  background: hsl(192, 100%, 9%);
+  overflow: hidden;
+ padding: 20px;
+ color: white;
+
+}
+
+.ol p {
+  float: right;
+}
+
+.po {
+ height: 100%;
+}
+
 .overlay-button {
     text-align: center;
     background: hsl(322, 100%, 66%);
@@ -231,6 +247,12 @@ li {
   .header-nav-button,
   .overlay-button {
       width: 80%;
+  }
+
+  .ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

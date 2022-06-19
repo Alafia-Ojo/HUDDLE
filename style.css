@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* HEADER */
+.header {
+  background: hsl(193, 100%, 96%) url(images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  font-family: poppins;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+
+  font-weight: 600;
+}
+
+.header-nav img {
+  width: 200px;
+}
+.button {
+  border-radius: 30px;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  padding: 5px 20px;
+  box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0.452);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  font-size: 18px;
+}
+.header-content img,
+.section-one img {
+  width: 500px;
+}
+
+.header-nav-button {
+  text-align: center;
+  background: hsl(322, 100%, 66%);
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+width: 50%;
+  padding:8px 5px;
+  font-size: 15px;
+}
+
+
+
+
+/* SECTION */
+
+section {
+    box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.041);
+    padding: 60px;
+    border-radius: 10px;
+  
+}
+
+.section-one {
+    margin:10px 0 0 110px;
+}
+
+.section-one,
+.section-three  {
+    display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  font-size: 18px;
+    
+   
+    
+}
+.section-two {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    font-size: 18px;
+     
+      margin: 10px 110px;
+      
+}
+
+.section-three {
+    margin: 10px 110px;
+}
+
+.section-one img,
+.section-two img,
+.section-three img {
+  width: 400px;
+  padding-bottom: 20px;
+}
+
+
+.section-three {
+    padding-bottom: 200px;
+    
+    margin-bottom: -110px;
+}
+.overlay {
+   
+ text-align: center;
+   position: relative;
+    display: flex;
+    flex-direction: column;
+   
+    height: 200px;
+   width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 82px 54px 5px 1px rgba(0, 0, 0, 0.514),;
+    z-index: 999;
+    border-radius: 10px;
+    align-items: center;
+      justify-content: center;
+  
+}
+  .flex {
+      margin: auto;
+      width: 70%;
+   z-index: 999;
+   
+     position: relative;
+  }
+
+.s {
+    display: flex;
+   align-items: center;
+
+   justify-content: space-evenly;
+    background-color: hsl(192, 100%, 9%);
+    margin-top: -110px;
+   color: white;
+ 
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+}
+
+
+
+/* .section-1 {
+    display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  font-size: 18px;
+} */
+
+
+
+
+
+
+
+
+@media (max-width: 40em) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-content img,
+  .section-one img {
+    width: 400px;
+  }
+  .header {
+    background: hsl(193, 100%, 96%) url(images/bg-hero-mobile.svg);
+  }
+
+  .header-nav {
+    padding: 20px;
+  }
+
+  .header-nav-button {
+      margin-bottom: 30px;
+  }
+
+  .center {
+    display: flex; flex-direction: column; align-items: center;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 10px;
+  }
+  .s {
+    display: inline-block;
+  }
+
+  .s p {
+      text-align: center;
+  }
+}
+
+
